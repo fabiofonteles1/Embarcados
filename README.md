@@ -27,9 +27,8 @@ Monitoramento de entrada digital para acionamento do alarme
    git clone https://github.com/fabiofonteles1/Embarcados.git
    ```
 2. Carregue o firmware na BitDogLab.
-3. Conecte os sensores e atuadores conforme o esquema de ligação.
-4. Compile e grave o código na placa.
-5. Monitore o funcionamento por meio de LEDs e alertas sonoros.
+3. Compile e grave o código na placa.
+4. Monitore o funcionamento por meio de LEDs e alertas sonoros.
 
 ## Links e Referências
 - 
