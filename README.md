@@ -1,5 +1,8 @@
 # Sistema de Alarme com BitDogLab
 
+![Diagrama do Sistema](https://github.com/fabiofonteles1/Embarcados/blob/main/docs/img/Captura%20de%20tela%202025-02-08%20221404.png)
+
+
 Este projeto tem como objetivo implementar um sistema de alarme simples utilizando a placa BitDogLab, focando em uma solução de baixo custo e fácil implementação. O sistema foi projetado para ser ativado por um botão, emitir um alerta sonoro e visual, além de enviar notificações via UART.
 
 ## Recursos do Projeto
