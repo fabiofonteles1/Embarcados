@@ -2,7 +2,6 @@
 
 ![Diagrama do Sistema](https://github.com/fabiofonteles1/Embarcados/blob/main/docs/img/Captura%20de%20tela%202025-02-08%20221404.png)
 
-
 Este projeto tem como objetivo implementar um sistema de alarme simples utilizando a placa BitDogLab, focando em uma solução de baixo custo e fácil implementação. O sistema foi projetado para ser ativado por um botão, emitir um alerta sonoro e visual, além de enviar notificações via UART.
 
 ## Recursos do Projeto
@@ -36,6 +35,20 @@ O código está organizado da seguinte maneira:
 - **Máquina de Estados**: Controla as transições entre os estados de "alarme ativado", "alarme desativado" e "erro".
 - **Funções de Controle**: Incluem funções para ativar/desativar o alarme, emitir som no buzzer, e acender/desligar os LEDs.
 
+### Exemplo de Código - Ativação do Alarme
+
+```c
+void ativar_alarme() {
+    alarme_ativo = true;
+    gpio_put(LED_R, 1);
+    gpio_put(LED_G, 0);
+    ssd1306_clear(&oled);
+    ssd1306_draw_string(&oled, 10, 20, 1, "Alarme Ativado!");
+    ssd1306_show(&oled);
+    uart_puts(UART_ID, "ALARME ATIVADO\n");
+}
+```
+
 ## Testes Realizados
 
 - **Teste de Entrada GPIO**: Verificou a detecção do pressionamento do botão e a ativação do alarme.
@@ -54,6 +67,8 @@ O código está organizado da seguinte maneira:
 ## Conclusão
 
 O projeto demonstra a viabilidade de construir um sistema de alarme simples, eficiente e de baixo custo utilizando a BitDogLab, sem a necessidade de componentes externos como sensores.
+
 ---
 
 **Mais informações sobre a BitDogLab**: [Projeto BitDogLab no GitHub](https://github.com/Fruett/BitDogLab)
+
