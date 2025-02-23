@@ -17,8 +17,6 @@ Este projeto tem como objetivo implementar um sistema de alarme simples utilizan
 - **Alerta Sonoro**: Um buzzer conectado ao GPIO 21 emite um som quando o alarme é ativado.
 - **Indicação Visual**: LEDs conectados aos GPIO 13 (LED vermelho), GPIO 11 (LED verde) e GPIO 12 (LED azul) indicam o status do alarme.
 - **Monitoramento de Ruído**: O alarme é acionado quando um nível de ruído específico é detectado pelo microfone.
-- **Desativação Automática**: Não implementado no código (remover se não for necessário).
-- **Monitoramento de Falhas**: Não implementado no código (remover se não for necessário).
 
 ## Como Usar
 - **Preparação**: Conecte a placa BitDogLab à sua máquina e configure o ambiente de desenvolvimento com o Visual Studio Code.
