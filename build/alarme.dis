@@ -1,5 +1,5 @@
 
-C:/Users/fabio/OneDrive/햞ea de Trabalho/alarme/build/alarme.elf:     file format elf32-littlearm
+C:/Users/fabio/OneDrive/햞ea de Trabalho/Embarcados/build/alarme.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
@@ -36,7 +36,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
  15 .debug_frame  000003c8  00000000  00000000  0000c558  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
-C:/Users/fabio/OneDrive/햞ea de Trabalho/alarme/build/alarme.elf:     file format elf32-littlearm
+C:/Users/fabio/OneDrive/햞ea de Trabalho/Embarcados/build/alarme.elf:     file format elf32-littlearm
 
 
 Disassembly of section .boot2:

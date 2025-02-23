@@ -10,16 +10,16 @@
 #include "ssd1306.h"
 
 // Configurações I2C para OLED
-#define I2C_PORT i2c0
-#define I2C_SDA 8
-#define I2C_SCL 9
-#define OLED_ADDR 0x3C
+#define I2C_PORT i2c0 // I2C0 é a I2C padrão no RP2040
+#define I2C_SDA 8 // Pino corrigido para evitar conflito
+#define I2C_SCL 9 // Pino corrigido para evitar conflito
+#define OLED_ADDR 0x3C // Endereço I2C do OLED
 
 // Configurações UART
-#define UART_ID uart1
-#define BAUD_RATE 115200
-#define UART_TX_PIN 4
-#define UART_RX_PIN 5
+#define UART_ID uart1  // UART1 é a UART padrão no RP2040
+#define BAUD_RATE 115200 // Baud rate da UART
+#define UART_TX_PIN 4 // Pino TX da UART
+#define UART_RX_PIN 5 // Pino RX da UART
 
 // Pinos do sistema
 #define BTN_ATIVAR 7    // Pino corrigido para evitar conflito
@@ -32,9 +32,9 @@
 #define MIC_THRESHOLD 2000
 
 // Variáveis globais
-volatile bool alarme_ativo = false;
-ssd1306_t oled;
-uint pwm_slice;
+volatile bool alarme_ativo = false; // Flag para indicar se o alarme está ativo
+ssd1306_t oled; // Estrutura para controle do OLED
+uint pwm_slice; // Slice do PWM
 
 // Protótipos de funções
 bool botao_pressionado(uint gpio);
