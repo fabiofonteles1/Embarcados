@@ -1,4 +1,4 @@
-// Padded and checksummed version of: C:/Users/fabio/OneDrive/Área de Trabalho/Embarcados/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: C:/Users/fabio/OneDrive/Área de Trabalho/embarcados/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

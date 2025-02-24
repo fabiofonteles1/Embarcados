@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "C:/Users/fabio/.pico-sdk/sdk/1.5.1/src/boards/include/boards/pico_w.h"
+#include "C:/Users/fabio/.pico-sdk/sdk/1.5.1/src/boards/include/boards/pico.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:
 
